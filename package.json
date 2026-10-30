@@ -1,0 +1,15 @@
+{
+  "name": "mang_03-enterprise-decision-support",
+  "version": "1.0.0",
+  "description": "Enterprise Issue–Solution Decision Support System for Key-Resource Allocation",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'No build step required for static prototype' && exit 0",
+    "test": "node tests/prototype-smoke.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

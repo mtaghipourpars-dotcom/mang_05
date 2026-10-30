@@ -1,0 +1,146 @@
+# First-Principles Product Charter: Key-Resource Allocation
+
+**Status:** Product-level design invariant  
+**Applies to:** Product scope, Issue assessment, Solution comparison, Home dashboard, decision records, outcome review, and learning  
+**Language:** English; see the Persian companion document.
+
+## 1. The problem, reduced to fundamentals
+
+An organization has finite cash, time, capacity, and managerial attention. These resources cannot be used twice in the same time window. Every allocation therefore has an opportunity cost. Under cash-flow pressure, a nominally profitable or urgent activity may still be infeasible if cash is unavailable before obligations fall due.
+
+The product exists to help authorized managers allocate **key organizational resources** to the issues and opportunities that matter most, using traceable evidence and explicit trade-offs. It is not a general inventory of every organizational resource and not an autonomous executive.
+
+## 2. Product purpose
+
+Help managers:
+1. Identify which issues threaten or enable the organization's most important commitments and outcomes.
+2. Understand the financial and operational consequences of each plausible response.
+3. Compare feasible alternatives using explicit assumptions, time horizons, constraints, confidence, and resource opportunity cost.
+4. Record who decided, why, under what authority, and what evidence would confirm the result.
+5. Learn whether resources were used efficiently and whether the intended outcome was achieved.
+
+The central operating question is: **Given scarce key resources—especially cash and the timing of cash flows—which issue deserves attention and allocation now, what does the chosen response cost, and what value or risk does it change?**
+
+## 3. Scope boundary: key resources, not all resources
+
+A resource belongs in the decision model when it is scarce, strategically critical, a binding constraint, materially exposed to a decision, or shared by competing issues in the same time window.
+
+Examples include:
+- **Financial:** available cash, cash-flow timing, due obligations, incremental cash required, avoidable cash outflow, working-capital exposure, margin at risk, and funding gap.
+- **Operational bottlenecks:** constrained machine/capacity windows, critical components, scarce qualified suppliers, specialist skills, and time-critical engineering/quality approvals.
+- **Commitment-bearing capacity:** resources whose allocation changes the probability or timing of delivery, contractual milestones, customer obligations, or business continuity.
+
+Do not build an exhaustive resource registry merely for completeness. Ordinary resources remain in their systems of record unless their scarcity or impact makes them relevant to a decision.
+
+## 4. Separate effectiveness from efficiency
+
+These are independent decision dimensions and must remain visible separately.
+
+- **Effectiveness:** Does the option protect or achieve the intended business outcome—such as a critical commitment, product/project objective, customer outcome, safety requirement, or continuity?
+- **Efficiency:** What resources, cash, time, and opportunity cost are consumed to achieve that outcome? Is the expected value proportionate to those costs?
+
+A low-cost option can be ineffective. An effective option can be financially inefficient or infeasible under cash timing. Do not collapse both dimensions into one opaque score. Apply hard safety, legal, technical, authority, and liquidity constraints first; then compare the remaining feasible options under a versioned decision profile.
+
+## 5. Financial evaluation belongs to manager review—not initial Issue registration
+
+The initial Issue Intake is for recording an observed situation, not asking an employee to calculate or estimate its financial consequences. At registration, the submitter may lack financial data, authority, context, or the expertise to estimate cash-flow, margin, opportunity cost, or avoided loss. Requiring those figures at intake would create friction and encourage false precision.
+
+The MVP therefore does **not** perform a quantitative financial-impact assessment on the intake/detail screen. Instead, after an Issue is reviewed and qualified, the relevant manager(s) assess its decision significance using a versioned set of **qualitative parameters** and defined value scales. The parameter set and the people authorized to assign values should reflect the issue domain and the manager's area of responsibility.
+
+Design rules:
+- Do not require monetary amounts or financial calculations from the person registering an Issue.
+- Keep Issue Intake separate from manager assessment; qualification does not imply that financial assessment is complete.
+- Use explicit qualitative scales with clear meanings, and provide **Unknown / Not assessed** where evidence or authority is insufficient. Unknown is not the lowest value and must not silently become zero.
+- Record who assigned each value, when, under which parameter/profile version, and the evidence or rationale used.
+- Keep financial parameters visible alongside effectiveness, urgency, risk, and feasibility, but do not collapse them into an unexplained universal score.
+- Use the parameter values to help managers compare Issues and Solution Candidates and allocate scarce key resources—especially cash—more consistently. The tool supports, but does not replace, managerial judgment or authority.
+- Defer quantitative monetary valuation, cash-flow modelling, and automated financial-impact calculations to later versions, when data availability, process discipline, ownership, and organizational maturity can support reliable figures.
+
+The product's financial core is therefore **manager-owned qualitative evaluation in the MVP**, with a deliberate path toward evidence-based quantitative evaluation later—not a mandatory financial calculation at registration.
+
+## 6. Cash-flow-first does not mean cash-only
+
+Cash availability and timing are hard realities, but cash must not become an unconditional universal priority. A decision profile may emphasize liquidity protection in a crisis while retaining hard obligations, safety, legal requirements, technical feasibility, strategic commitments, and downstream consequences.
+
+A cash benefit that arrives after an obligation is due may not solve the immediate liquidity gap. A high-margin project may consume cash before it generates cash. The model must therefore reason over time-phased cash flows and constraints—not just revenue, margin, or a single financial score.
+
+When no alternative is demonstrably feasible, the service must say so and allow an authorized manager to abstain, request evidence, or use a controlled, time-limited emergency path with an owner, expiry, and review. It must not fabricate a recommendation to fill the screen.
+
+## 7. Home page: the executive's first view
+
+The fixed Home page must make **efficiency and effectiveness equally legible**, with two primary visual anchors:
+
+1. **Project Value & Risk Map** — shows the relationship between expected/observed value and risk/exposure, with financial dimensions and evidence status accessible on drill-down. It should help identify where intervention may protect the most value for the resources required.
+2. **Product / Work-Portfolio Status** — shows whether product families and their projects are achieving intended outcomes and commitments, including delivery, margin, liquidity, customer, and critical milestone signals where evidence exists.
+
+The Home page also needs issue-status cards that open the correctly filtered Issue list/detail, plus decisions awaiting action, projects needing attention, intervention windows, and material updates.
+
+These views answer different questions:
+- Portfolio status: **Are we achieving the outcomes and commitments that matter?** (effectiveness)
+- Value & risk map: **Where is value exposed, and what resource-efficient intervention is available?** (efficiency and risk-adjusted allocation)
+
+Financial indicators should be visible, not buried in a report, but each must disclose whether it is verified, estimated, assumed, or unknown. Demo values must be explicitly marked synthetic. Do not invent monetary amounts or imply live ERP data.
+
+## 8. Decision logic and record
+
+For every Issue, with deeper quantification when materiality or decision stakes warrant it:
+1. Preserve the original report and establish what is observed versus unknown.
+2. Link relevant products, projects, commitments, and key resources only when the relationship is supported.
+3. Estimate time-phased operational and financial impact, including a no-action baseline where defensible.
+4. Generate or register case-specific alternatives.
+5. Apply hard feasibility gates, including cash timing and binding resource constraints.
+6. Compare feasible alternatives on a shared, versioned profile across effectiveness, efficiency, financial exposure, confidence, reversibility, and time-to-impact.
+7. Record selected option, rejected alternatives and reasons, authority, assumptions, expected outcome, resource allocation, owner, deadline, and review trigger.
+8. Compare observed results against the frozen decision-time baseline; mark attribution as verified, partial, uncertain, or not established.
+
+Keep these concepts distinct: issue urgency, qualification, feasibility, priority, decision, action completion, resolution, and proven value.
+
+## 9. Evidence and integrity invariants
+
+- No source, no claimed fact; no evidence, no asserted certainty.
+- Estimate is not actual; association is not causation.
+- Decision is not action; action completion is not resolution.
+- Selected option is not proof of success.
+- Financial impact is not duplicated across related issues.
+- A resource allocation is time-bound and competes with other uses.
+- Feasibility is distinct from priority; authority is distinct from priority.
+- Human decision authority and rationale remain explicit.
+- A rejected alternative records why it was rejected and what evidence or condition would reopen it.
+- The service may abstain from recommending when evidence or feasibility is insufficient.
+
+## 10. MVP acceptance tests
+
+The MVP should demonstrate, with clearly labeled synthetic data:
+- A material issue whose cash timing changes the ranking or feasibility of alternatives.
+- Separate display of effectiveness and efficiency, without collapsing them into a single score.
+- At least one case where a high-outcome option is infeasible due to a hard constraint.
+- An explicit no-action baseline and a defensible comparison of intervention cost versus exposure.
+- Provenance and confidence for material financial figures; unknown values remain unknown.
+- Home drill-down from the Value & Risk Map and Portfolio Status into the relevant project, commitment, issue, decision, and evidence.
+- Decision-time targets frozen and later compared with observed outcomes.
+- No claim of realized savings or causal attribution without evidence.
+
+## 11. Non-goals
+
+Do not turn the MVP into an exhaustive enterprise resource-management system, a replacement ERP, an automatic production scheduler, a generic KPI wall, or a black-box ranking engine. The product is a decision-support service for allocating scarce key resources to important issues with financial clarity, explicit constraints, accountable decisions, and outcome evidence.
+
+
+## Home visual reference — PARS Value Protection Tower
+The Home page's two primary panels follow the supplied PARS dashboard composition and the `newmodel1/demo/main.png` visual baseline:
+- **Project Value & Risk Map** uses a plotted risk/value field, quadrant labels, colored project markers, intervention-window axis and supporting financial evidence signals.
+- **Product / Work-Portfolio Status** uses product photography tiles instead of generic icons, with family labels and clearly marked illustrative statuses.
+- **Management decisions requiring attention** uses photographic thumbnails, issue/project identifiers, concise decision context, functional drill-downs and intervention deadlines.
+- Keep effectiveness (portfolio commitments/outcomes) separate from efficiency (value/risk and scarce-resource allocation).
+- All project statuses, progress, dates, positions and financial amounts shown in this prototype are synthetic. Do not infer real PARS project performance or live ERP connectivity from reference imagery.
+
+
+## Dedicated Projects and Value Map destinations
+The primary sidebar has eight destinations in the agreed order: Home, Projects, Value Map, Issue, Solution, Decision & Actions, Outcomes & Learning, Settings. The Home portfolio panel navigates to Projects; the Home value/risk panel navigates to Value Map. Projects focuses on product/work-family effectiveness, commitments, progress and follow-up. Value Map focuses on exposure, intervention windows, evidence state and scarce-key-resource efficiency. The two views must remain distinct. All project-level values and statuses in the current prototype are synthetic.
+
+
+## Primary dashboard and Issue/Solution list pages
+Home is the primary management dashboard, with the fixed section order: status cards; Issue workbench; Value Map beside Product / Work-Portfolio Status; management decisions requiring attention beside priority project portfolio; latest material developments and decision-integrity rules. Issue is an Issue List page with queue metrics, searchable/filterable records, qualification/evidence dashboards, and a selected record. Place **New Issue Intake** at the bottom of the Issue page; it opens the complete intake form. Solution is a Solution List page with searchable/filterable candidate records, feasibility and assessment dashboards, and detailed comparison. Keep quantitative impact screening out of initial intake; relevant managers assess qualitative financial parameters after qualification. All prototype records remain synthetic.
+
+
+## Implementation contract
+The machine-executable development workflow and test gates are defined in the repository root: `AGENTS.md`, `MASTER_PROTOCOL.md`, `IMPLEMENTATION_SEQUENCE.md`, `SCREEN_REFERENCE_CONTRACT.md`, `APP_ARCHITECTURE_AND_DATA.md`, `ACCEPTANCE_GATES.md`, and `PROMPT_PACK.md`. These implementation documents must not weaken the product invariants in this charter. In particular, Issue Intake does not request financial estimates; relevant managers own qualitative parameter assessment after qualification; unknown is not zero; feasibility precedes ranking; human authority remains explicit; Home keeps effectiveness and efficiency as separate views.

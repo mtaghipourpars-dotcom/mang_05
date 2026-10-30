@@ -1,0 +1,22 @@
+relationship_type,directionality,meaning,evidence_required,default_status,allowed_uses,prohibited_inference
+IS_A,Directed,Child type is subtype of parent,Taxonomy review,Proposed,Template inheritance,No causal inference
+SYNONYM_OF,Symmetric,Alternate term for same concept,Steward confirmation and locale,Proposed,Search expansion,Do not merge historical cases
+SIMILAR_TO,Symmetric,Concepts share traits but differ,Explainable match rationale,Proposed,Comparison panel,Not identity
+DUPLICATE_CANDIDATE_OF,Directed,Potential duplicate definition or case,Match signals and context,Proposed,Human review queue,No silent merge
+POSSIBLE_CAUSE_OF,Directed,Hypothesized causal link,Source and hypothesis context,Proposed,Investigation suggestion only,Not validated cause
+VALIDATED_CAUSE_OF,Directed,Cause supported in defined context,Evidence reviewer date and scope,In Review,Approved causal learning,No universal generalization
+SYMPTOM_OF,Directed,Observed sign may indicate condition,Diagnostic context,Proposed,Triage suggestions,Not proof
+MAY_AFFECT,Directed,Potential effect on object or objective,Mechanism hypothesis and scope,Proposed,Impact prompt,Not observed impact
+OBSERVED_EFFECT_ON,Directed,Recorded measured effect,Measurement source and time,Proposed,Outcome history,No assumed causality without evidence
+MITIGATES,Directed,Intervention may reduce issue or risk,Applicability conditions,Proposed,Candidate retrieval after approval,Not guaranteed resolution
+REQUIRES,Directed,Prerequisite relation,Dependency definition,Proposed,Feasibility gating,Not authority approval unless explicit
+BLOCKED_BY,Directed,Current progress blocked by another item,Case evidence and time context,Proposed,Dependency view,Not necessarily root cause
+DEPENDS_ON,Directed,Progress depends on event/resource/decision,Owner/date/condition if known,Proposed,Sequencing review,No automatic fault attribution
+COMPETES_FOR,Symmetric,Cases need same scarce resource in overlapping periods,Resource pool and time window,Proposed,Enterprise trade-off,No priority by seniority
+ALTERNATIVE_TO,Symmetric,Options may substitute for same objective,Objective and differences,Proposed,Option comparison,Not equal feasibility
+CONTRADICTS,Symmetric,Claims/rules/evidence conflict,Both sources and conflict type,Proposed,Reconciliation,Do not discard either source
+SUPERSEDES,Directed,New definition prospectively replaces old,Approval and mapping,Proposed,Future catalogue selection,Do not rewrite history
+LINKED_TO,Symmetric,Relevant relationship without stronger claim,Rationale and context,Proposed,Navigation,No causality/applicability assumption
+VERIFIED_BY,Directed,Claim/action/outcome checked by evidence/control,Verification record,Proposed,Assurance,No unverified closure
+APPLIES_WHEN,Directed,Conditional applicability expression,Versioned conditions,Proposed,Recommendation filtering,No unconditional applicability
+OWNED_BY,Directed,Accountability relation to role/function,Approved responsibility map,Proposed,Routing,No invented individual assignment
